@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Playground</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_save">Save</string>
+    <string name="show_preview">Show preview</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
 </resources>
