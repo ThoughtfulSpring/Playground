@@ -1,20 +1,23 @@
 package e.niiaouhdev.playground.feature.form.model
 
+import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class FormViewModel : ViewModel() {
-    var mutableLiveData = MutableLiveData<String>()
-    var title = MutableLiveData<String>()
-    var description = MutableLiveData<String>()
-    var showPreview = MutableLiveData<Boolean>()
-    var isLoading = MutableLiveData<Boolean>()
+    val title = MutableLiveData<String>()
+    val description = MutableLiveData<String>()
+    val showPreview = MutableLiveData<Boolean>()
+    val isLoading = MutableLiveData<Boolean>()
+
+    val isSavedButtonEnabled = MediatorLiveData<Boolean>()
 
     init {
-        mutableLiveData.value = "Hey you, this is the playground  of Niaaouh-Dev"
         title.value = ""
         description.value = ""
         showPreview.value = false
         isLoading.value = false
+        isSavedButtonEnabled.addSource(title) { isSavedButtonEnabled.value = !title.value.isNullOrBlank() && isLoading.value != true }
+        isSavedButtonEnabled.addSource(isLoading) { isSavedButtonEnabled.value = !title.value.isNullOrBlank() && isLoading.value != true }
     }
 }
