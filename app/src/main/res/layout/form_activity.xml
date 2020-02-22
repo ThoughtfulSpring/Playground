@@ -8,10 +8,6 @@
         <variable
             name="model"
             type="e.niiaouhdev.playground.feature.form.model.FormViewModel" />
-
-        <variable
-            name="presenter"
-            type="e.niiaouhdev.playground.feature.form.FormPresenter" />
     </data>
 
     <ScrollView
@@ -54,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:enabled="@{model.isSavedButtonEnabled}"
-                android:onClick="@{() -> presenter.save()}"
+                android:onClick="@{() -> model.save()}"
                 android:text="@string/hint_save"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/description_ET" />
