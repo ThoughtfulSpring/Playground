@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="e.niiaouhdev.playground.feature.form.model.FormViewModel" />
+            type="e.niiaouhdev.playground.feature.feature1_form.model.FormViewModel" />
     </data>
 
     <ScrollView

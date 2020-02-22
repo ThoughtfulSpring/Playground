@@ -1,4 +1,4 @@
-package e.niiaouhdev.playground.feature.form
+package e.niiaouhdev.playground.feature.feature1_form
 
 import android.os.Bundle
 import android.widget.Toast
@@ -8,7 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import e.niiaouhdev.playground.R
 import e.niiaouhdev.playground.databinding.FormActivityBinding
-import e.niiaouhdev.playground.feature.form.model.FormViewModel
+import e.niiaouhdev.playground.feature.feature1_form.model.FormViewModel
 
 class FormActivity : AppCompatActivity() {
 

@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import e.niiaouhdev.playground.R
 import e.niiaouhdev.playground.databinding.MainActivityBinding
-import e.niiaouhdev.playground.feature.form.FormActivity
+import e.niiaouhdev.playground.feature.feature1_form.FormActivity
 
 class MainActivity : AppCompatActivity(), MainPresenter {
 

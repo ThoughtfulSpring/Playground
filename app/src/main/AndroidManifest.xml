@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="e.niiaouhdev.playground.feature.form.FormActivity" />
+        <activity android:name="e.niiaouhdev.playground.feature.feature1_form.FormActivity" />
     </application>
 
 </manifest>

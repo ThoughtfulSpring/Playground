@@ -1,4 +1,4 @@
-package e.niiaouhdev.playground.feature.form.model
+package e.niiaouhdev.playground.feature.feature1_form.model
 
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
