@@ -24,6 +24,10 @@ class FormActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
         binding.model = model
 
+        model.displaySaveMessage.observe(this, Observer {
+            showSuccessMessage()
+        })
+
     }
 
     private fun showSuccessMessage() {
